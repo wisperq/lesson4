@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap');
+
+
+
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 850px;
+    min-height: 100vh;
+    margin: 0px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(100, 100, 100, 0.5)
+    /* overflow: auto; */
+}
+
+.wrapper h1{
+    /* margin-bottom: 35px; */
+    margin: 0 0 35px 0;
+}
+
+.wrapper p{
+    text-align: left;
+    margin: 0 0 35px 0;
+}
+
+.wrapper img{
+    width: 30%;
+    margin: 0 0 35px 0;
+}
+
+/* h1{
+    background-color:aqua;
+}
+
+p{
+    background-color: aquamarine;
+} */
+
+/* body{background-image: url("../"); */
+    body{
+        background-image: url("../img/ava7patterns_pattern_1301.png");
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-position:21% 21%;
+        color: white;
+        background-attachment: fixed;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        /* font-style: italic; */
+        font-weight: 300;
+
+}
+
+h1,
+h2,
+ .h1,
+ .h2{
+ font-size: 50px;
+ font-weight: 700;
+}
+
+
+.imgParalax{
+    width: 100%;
+    height: 25vh;
+    background-image: url("https://api.lorem.space/image/movie?w=1000&h=640&Zhash=2ys8hhbh");
+    /* background-attachment: fixed; */
+    background-position:  center;
+    background-size: 100%;
+    transition: 0.6s;
+}
+
+.imgParalax:hover{
+    background-size: 200%;
+}
+
+.btnPress {
+    height: 25vh;
+    background: rgb(66,6,89);
+background: linear-gradient(79deg, rgba(66,6,89,1) 22%, rgba(9,9,121,1) 35%, rgba(82,8,135,1) 42%, rgba(4,115,191,1) 69%, rgba(2,162,222,1) 84%);
+    margin-left: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    border: 2px solid white;
+    text-shadow: 0 -5px 0 red;
+    box-shadow: 0 20px 0 green;
+    /* border-radius: 50%; */
+    border-radius: 0 50% 0 50%;
+    position: relative;
+    top: 0;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    text-shadow: 0 0 0 red;
+    box-shadow: 0 10px 0 green;
+    top: 10px;
+    border-radius: 50% 0 50% 0;
+}
+
+.btn:focus,.btn:active{
+    text-shadow: 0 5px 0 red;
+    box-shadow: 0 0 0 green;
+    top: 20px;
+}
